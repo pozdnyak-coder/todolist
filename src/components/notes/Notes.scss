@@ -1,0 +1,92 @@
+.notes{
+    margin-top: 30px;
+    position: relative;
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 22px;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 20px 16px 16px;
+        border-radius: 16px;
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.11) 0%, rgba(103, 80, 164, 0.11) 100%), #FFFBFE;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+        color: #6750A4;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &-item{
+        padding: 16px;
+        border-radius: 16px;
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.11) 0%, rgba(103, 80, 164, 0.11) 100%), #FFFBFE;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+        height: 175px;
+        overflow: auto;
+        h3{           
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            word-break: break-all;
+        }
+        span{
+            display: block;
+            color: #CAC4D0;
+            font-size: 14px;
+            margin-bottom: 16px;
+            letter-spacing: 0.25px;
+        }
+        p{
+            word-break: break-all;
+            line-height: 20px;
+            font-size: 14px;
+            color:  #49454F;
+            margin-bottom: 17px;
+        }
+        &-controls{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        &.column{
+            grid-template-columns: initial;
+        }
+    }
+}
+button{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 200ms;
+    border-radius: 5px;
+    &:first-child{
+        color: #6750A4;
+        &:hover{
+            background: #E6DDFF;
+        }
+    }
+    &:last-child{
+        color: #CF1B1B;
+        &:hover{
+            background: #FFE1E1;
+        }
+    }
+}
